@@ -1,0 +1,12 @@
+{% if latest_Check_list %}
+ <ul>
+	{% for Check in latest_Check_list %}
+		<li>
+			<a href="/io_inspect/{{ Check.id }}">
+			{{ Check.question }}
+		</li>
+	{% endfor %}
+</ul>
+{% else %}
+
+{% endif %}
